@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Real time dice roller</title>
+		<meta name="description" content="Demo for the tutorial on how to code a dice roller with Three.js and cannon-es" />
+		<meta name="keywords" content="3d dice, three.js, cannon-es, webgl, rolling dice, online dice roller, dice roller for ludo, dice roller for offline and online games" />
+		<meta name="author" content="amaan" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	
+	</head>
+	<body>
+		<main>
+			<div class="frame">
+				<div class="frame__title"> 
+					
+				</div>
+			
+			</div>
+			<div class="content">
+				<canvas id="canvas"></canvas>
+				<div class="ui-controls">
+					<div class="score">Score: <span id="score-result"></span></div>
+					<button id="roll-btn">Throw the dice</button>
+				</div>
+			</div>
+		</main>
+		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+			  "three/addons/": "https://unpkg.com/three@0.138.0/examples/jsm/"
+			}
+		  }
+		</script>
+		<script type="module" src="main.js"></script>
+	</body>
+</html>
